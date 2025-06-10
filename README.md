@@ -1,20 +1,33 @@
 # PinPoint: Stay Alert, Stay Safe
+PinPoint is currently in a closed beta state, currently exlusively available to students of the University of California, Santa Cruz (UCSC). If you are a UCSC student, please feel free to reach out for access to the beta build. You can still access the application and server by hosting a local development deployment of the app on your machine, provided you have a mobile device to connect to.
 
-### Installation Guide
+### Installation Guide | Locally Hosted Instance
+If you are not a UCSC student and/or wish to host a local instance of PinPoint, follow the instructions below.
+
 Before you begin, you will need NodeJS and Node Package Manager (npm) installed on your machine. You will also need the Expo Go app installed on your mobile device.
 
 Clone the repository.
 ```
-git clone https://github.com/adamnmartinez/cse115a.git
+git clone https://github.com/adamnmartinez/pinpointapp.git
 ```
 
-Go into both directories and install the required packages.
+Go into the "frontend" directory and install the required packages.
+```
+cd frontend
+npm install
+```
+
+Run `npx expo start` to start the mobile deployment. 
+- Try `npx expo start --tunnel` if the standard connection fails to connect.
+
+Scan the QR code generated in your console with your mobile device to connect to the development build. 
+
+#### Additonal Instructions - Backend Deployment
+If you wish to host your own server with the app, perform the following additonal instructions. You will need a PostgreSQL instance to connect to.
+
+Go into the "backend" directory and install the required packages.
 ```
 cd backend
-npm install
-...
-
-cd frontend
 npm install
 ```
 
@@ -35,14 +48,9 @@ HOSTNAME = <YOUR HOST URL>
 SECRET_KEY = <YOUR ENCRYPTION KEY>
 ```
 
-To start the backend server, run `npm start` in the backend directory
+In the "frontend" directory within the `server.tsx` file, you must change the HOST variable to the address of your server.
 
-In a new tab, move into the `PinPoint` directory within `frontend`. 
+To start the backend server, run `npm start` in the backend directory.
 
-In the `server.tsx` file, change the HOST variable to the URL of your backend server. If you are running the frontend deployment on the same machine as the server, you can use `localhost` with the port for your server.
 
-Run `npx expo start` to start the mobile deployment. 
-- Try `npx expo start --tunnel` if the standard connection fails to connect.
-
-Scan the QR code generated in your console with your mobile device to connect to the development build. 
 
