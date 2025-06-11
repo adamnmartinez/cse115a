@@ -1,8 +1,10 @@
 # PinPoint: Stay Alert, Stay Safe
-PinPoint is currently in a closed beta state, currently exlusively available to students of the University of California, Santa Cruz (UCSC). If you are a UCSC student, please feel free to reach out for access to the beta build. You can still access the application and server by hosting a local development deployment of the app on your machine, provided you have a mobile device to connect to.
+PinPoint is currently in a closed beta state, currently registration is exlusively available to students of the University of California, Santa Cruz (UCSC). If you are a UCSC student, please feel free to reach out for access to the beta build. You can still access the application and server by hosting a local development deployment of the app on your machine, provided you have a mobile device to connect to.
+
+You can view a video demo here: https://www.youtube.com/watch?v=mv7kUvMTjF0
 
 ### Installation Guide | Locally Hosted Instance
-If you are not a UCSC student and/or wish to host a local instance of PinPoint, follow the instructions below.
+If you wish to host a local instance of PinPoint, follow the instructions below.
 
 Before you begin, you will need NodeJS and Node Package Manager (npm) installed on your machine. You will also need the Expo Go app installed on your mobile device.
 
